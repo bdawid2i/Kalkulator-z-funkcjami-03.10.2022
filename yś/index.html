@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+</head>
+<body>
+
+    <script>
+        let liczba1 = parseInt(prompt("Podaj pierwszą liczbę"));
+        let liczba2 = parseInt(prompt("Podaj drugą liczbę"));
+        let znak = prompt("Podaj znak");
+
+       function suma(n1, n2)
+       {
+        alert('Suma wynosi ' + (n1+n2));
+       }
+       
+       function różnica(n1, n2)
+       {
+        alert('Różnica wynosi ' + (n1-n2));
+       }
+       
+       function iloczyn(n1, n2)
+       {
+        alert('Iloczyn wynosi ' + (n1*n2));
+       }  
+       
+       function iloraz(n1, n2)
+       {
+        alert('Iloraz wynosi ' + (n1/n2));
+       }
+       
+       
+       switch(znak) {
+        case "+": suma(liczba1, liczba2);
+        break;
+        case "-": różnica(liczba1, liczba2);
+        break;
+        case "*": iloczyn(liczba1, liczba2);
+        break;
+        case ":": iloraz(liczba1, liczba2);
+        break;
+        default: alert('Podałeś niepoprawny znak!');
+       }
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
